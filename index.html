@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="top-bar">Free UK Delivery Over £24.99</div>
+        <div class="header-container">
+            <img src="image/site_logo.png" alt="Store Logo" class="logo">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#men">Men</a></li>
+                    <li><a href="#women">Women</a></li>
+                    <li><a href="#unisex">Unisex</a></li>
+                    <li><a href="#bundle">Bundle & Save</a></li>
+                    <li><a href="#disclaimer">Disclaimer</a></li>
+                    <li><a href="#faqs">FAQs</a></li>
+                </ul>
+                <div class="search-box">
+                    <form action="#">
+                        <input type="text" placeholder="Search...">
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+                <!-- Shopping cart icon -->
+                <div class="shopping-cart">
+                    <a href="#">
+                        <img href="#cart-img" src="./image/icons8-shopping-cart-30.png" alt="Shopping Cart">
+                    </a>
+                </div>
+            </nav>
+        </div>
+        
+    </header>
+
+    <main class="product-detail">
+        <div class="product-images">
+            <div class="main-image">
+                <img src="image\logo.png" alt="Main Product Image">
+            </div>
+            <div class="thumbnail-images">
+                <img src="image\side.png" alt="Thumbnail Image 1">
+                <img src="image\side.png" alt="Thumbnail Image 2">
+                <img src="image\side.png" alt="Thumbnail Image 3">
+                <img src="image\side.png" alt="Thumbnail Image 4">
+            </div>
+        </div>
+
+        <div class="product-info">
+            <h1>Inspired by Angel #737</h1>
+            <p class="price"><span class="current-price">£19.99</span> <span class="original-price">£29.99</span></p>
+            <p class="shipping-info">Free Shipping on orders over £24.99</p>
+            <div class="size-options">
+                <label for="size">Size</label>
+                <button class="size-btn active">100ml</button>
+                <button class="size-btn">50ml</button>
+            </div>
+            <div class="quantity">
+                <div class="quantity-inner-container">
+                    <div id="minus">-</div>
+                    <div id="counter">1</div>
+                    <div id="plus">+</div>
+                </div>
+
+                <button id="add-to-cart-btn">ADD TO CART</button>
+            </div>
+            <div class="checkout-options">
+                <div width="692px" height="58px">
+                    <img src="image/card.png" alt="Visa" style="cursor: pointer;">
+                </div>
+                <!-- <p>Secure Checkout With</p> -->
+
+                <!-- <img src="paypal.png" alt="PayPal">
+                <img src="amex.png" alt="Amex"> -->
+            </div>
+            <div class="product-icons">
+                <div class="icon">
+                    <!-- <div> -->
+                    <img src="image/cruelty_free.png" alt="Vegan Friendly">
+                    <!-- <p>Vegan Friendly</p> -->
+                    <!-- </div> -->
+                    <!-- <div> -->
+                    <img src="image/cruelty_free.png" alt="Cruelty Free">
+                    <!-- <p>Cruelty Free</p> -->
+                    <!-- </div> -->
+                    <!-- <div> -->
+                    <img src="image/cruelty_free.png" alt="Ethical Ingredients">
+                    <!-- <p>Ethical Ingredients</p> -->
+                    <!-- </div> -->
+
+                </div>
+                <div class="icon">
+                    <!-- <div class="icon"> -->
+                    <img src="image/uk_shiping.png" alt="Long Lasting">
+                    <!-- <p>Long Lasting</p> -->
+                    <!-- </div> -->
+                    <!-- <div class="icon"> -->
+                    <img src="image/uk_shiping.png" alt="UK Shipping">
+                    <!-- <p>UK Shipping</p> -->
+                    <!-- </div> -->
+                    <!-- <div class="icon"> -->
+                    <img src="image/uk_shiping.png" alt="Money Back Guarantee">
+                    <!-- <p>Money Back Guarantee</p> -->
+                    <!-- </div> -->
+
+                </div>
+
+
+            </div>
+            <!-- <div>
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                    <h2>Description</h2>
+                    <div id="plus-description" style="cursor: pointer;">+</div>
+                    <div id="minus-description" style="cursor: pointer; display: none;">-</div>
+                </div>
+                <p id="description-p" style="display: none;">An inspiration of notes similar to those found in Angel. A
+                    luxurious and indulgent fragrance, featuring top notes of bergamot and red berries, a floral heart
+                    of jasmine and rose, and a rich base of vanilla, caramel and patchouli. <br>Why pay a premium for
+                    Angel when Robin & Barrow offers a comparably crafted alternative at a fraction of the cost.Inspired
+                    by Angel a divine and celestial fragrance that evokes a sense of sophistication and luxury. <br>
+                    The top notes of bergamot and red berries create a fruity and fresh opening, while the heart notes
+                    of jasmine and rose add a feminine and floral touch to the scent. The base notes of vanilla,
+                    caramel, and patchouli provide a warm and creamy finish that envelops the senses. <br> 
+                    This fragrance is perfect for those who love to indulge in the finer things in life and want to make
+                    a statement with their scent. Angel perfume is a true masterpiece of perfumery, offering a unique
+                    and unforgettable olfactory experience.</p>
+            </div>
+            <div>
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                    <h2>How to USe</h2>
+                    <div id="plus-description1" style="cursor: pointer;">+</div>
+                    <div id="minus-description2" style="cursor: pointer; display: none;">-</div>
+                </div>
+                <p id="how-to-use" style="display: none;">An inspiration of notes similar to those found in Angel. A
+                    luxurious and indulgent fragrance, featuring top notes of bergamot and red berries, a floral heart
+                    of jasmine and rose, and a rich base of vanilla, caramel and patchouli.</p>
+                    </div>
+                    <div>
+                    <div style="display: flex; align-items: center; justify-content: space-between;">
+                        <h2>Ingredients</h2>
+                        <div id="plus-description3" style="cursor: pointer;">+</div>
+                        <div id="minus-description4" style="cursor: pointer; display: none;">-</div>
+                    </div>
+                    <p id="ingredients" style="display: none;">An inspiration of notes similar to those found in Angel. A
+                        luxurious and indulgent fragrance, featuring top notes of bergamot and red berries, a floral heart
+                        of jasmine and rose, and a rich base of vanilla, caramel and patchouli.</p>
+                        </div>
+                        <div>
+                            <div style="display: flex; align-items: center; justify-content: space-between;" >
+                                <h2>Shipping Policy</h2>
+                                <div id="plus-description5" style="cursor: pointer;">+</div>
+                                <div id="minus-description6" style="cursor: pointer; display: none;">-</div>
+                            </div>
+                            <p id="shipping-policy" style="display: none;">An inspiration of notes similar to those found in Angel. A
+                                luxurious and indulgent fragrance, featuring top notes of bergamot and red berries, a floral heart
+                                of jasmine and rose, and a rich base of vanilla, caramel and patchouli.</p>
+                            </div> -->
+
+            <hr>
+            <div>
+                <div class="description-header">
+                    <h2>Description</h2>
+                    <div id="plus-description" class="toggle">+</div>
+                    <div id="minus-description" class="toggle" style="display: none;">-</div>
+                </div>
+                <p id="description-p" class="description-content">An inspiration of notes similar to those found in
+                    Angel. A
+                    luxurious and indulgent fragrance, featuring top notes of bergamot and red berries, a floral heart
+                    of jasmine and rose, and a rich base of vanilla, caramel and patchouli. <br>Why pay a premium for
+                    Angel when Robin & Barrow offers a comparably crafted alternative at a fraction of the cost.Inspired
+                    by Angel a divine and celestial fragrance that evokes a sense of sophistication and luxury. <br>
+                    The top notes of bergamot and red berries create a fruity and fresh opening, while the heart notes
+                    of jasmine and rose add a feminine and floral touch to the scent. The base notes of vanilla,
+                    caramel, and patchouli provide a warm and creamy finish that envelops the senses. <br>
+                    This fragrance is perfect for those who love to indulge in the finer things in life and want to make
+                    a statement with their scent. Angel perfume is a true masterpiece of perfumery, offering a unique
+                    and unforgettable olfactory experience.
+                </p>
+            </div> <hr>
+            <div>
+                <div class="description-header">
+                    <h2>How to Use</h2>
+                    <div id="plus-description1" class="toggle">+</div>
+                    <div id="minus-description1" class="toggle" style="display: none;">-</div>
+                </div>
+                <p id="how-to-use" class="description-content">An inspiration of notes similar to those found in Angel.
+                    A
+                    luxurious and indulgent fragrance, featuring top notes of bergamot and red berries, a floral heart
+                    of jasmine and rose, and a rich base of vanilla, caramel and patchouli.
+                </p>
+            </div>
+            <hr>
+            <div>
+                <div class="description-header">
+                    <h2>Ingredients</h2>
+                    <div id="plus-description2" class="toggle">+</div>
+                    <div id="minus-description2" class="toggle" style="display: none;">-</div>
+                </div>
+                <p id="ingredients" class="description-content">An inspiration of notes similar to those found in Angel.
+                    A
+                    luxurious and indulgent fragrance, featuring top notes of bergamot and red berries, a floral heart
+                    of jasmine and rose, and a rich base of vanilla, caramel and patchouli.
+                </p>
+            </div> <hr>
+            <div>
+                <div class="description-header">
+                    <h2>Shipping Policy</h2>
+                    <div id="plus-description3" class="toggle">+</div>
+                    <div id="minus-description3" class="toggle" style="display: none;">-</div>
+                </div>
+                <p id="shipping-policy" class="description-content">An inspiration of notes similar to those found in
+                    Angel. A
+                    luxurious and indulgent fragrance, featuring top notes of bergamot and red berries, a floral heart
+                    of jasmine and rose, and a rich base of vanilla, caramel and patchouli.
+                </p>
+            </div> <hr>
+
+</main>
+<script src="script.js"></script>
+</body>
+
+</html>
